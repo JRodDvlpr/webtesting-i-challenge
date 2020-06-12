@@ -5,9 +5,8 @@ module.exports = {
   get,
 };
 
-// MVP
 function succeed(item) {
-  if (item.enhancement < 36) {
+  if (item.enhancement < 20) {
     return { ...item, enhancement: item.enhancement + 1 };
   } else {
     return item
@@ -28,7 +27,6 @@ function repair(item) {
   return { ...item, durability: 100 };
 }
 
-//STRETCH
 
 function get(item) {
   let newName = item.name;
